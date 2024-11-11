@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SBA 316</title>
+    <meta charset="UTF-8" />
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Hind+Siliguri:wght@300;400;500;600;700&family=WindSong:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ----------------- -->
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav id="top-menu"></nav>
+      <!-- Add the <nav> element below -->
+      <nav id="sub-menu"></nav>
+    </header>
+    <main>
+      <div id="main-container">
+        <div>
+          <img src="./images/Washburn-1-copy.jpg" alt="" />
+        </div>
+
+        <hr />
+
+        <div>
+          <div class="profile-container">
+            <img src="./images/proflepic.jpg" alt="" />
+          </div>
+
+          <div class="text-container">
+            <h2>Welcome to Upstate thrills!</h2>
+            <p>
+              Hello! I'm Rajeen, a New York City-based traveler, photographer,
+              hiker, and foodie. Always on the hunt for my next adventure, I
+              love exploring new places, capturing moments through my lens, and
+              discovering unique flavors along the way.
+            </p>
+            <p>
+              Living in the hustle and bustle of NYC often leaves us craving a
+              bit of nature. That's why I created this space — to share the
+              beauty and serenity of upstate New York through my collection of
+              photos. From breathtaking landscapes to hidden gems, my aim is to
+              inspire you to step outside and explore these stunning
+              destinations. I hope my images spark your curiosity and encourage
+              you to discover the calming, adventurous side of life just outside
+              the city.
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div id="form-container">
+          <div>
+            <h2>JOIN MY NEWSLETTER!</h2>
+          </div>
+          <div class="container">
+            <form>
+              <div class="input-group">
+                <label>Full Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  id="contact-name"
+                  onkeyup="validateName()"
+                />
+                <span id="name-error"></span>
+              </div>
+
+              <div class="input-group">
+                <label>Phone No.</label>
+                <input
+                  type="tel"
+                  placeholder="123 456 7890"
+                  id="contact-num"
+                  onkeyup="validateNum()"
+                />
+                <span id="phone-error"></span>
+              </div>
+
+              <div class="input-group">
+                <label>Email Id</label>
+                <input
+                  type="email"
+                  placeholder="Enter Email"
+                  id="contact-email"
+                  onkeyup="validateEmail()"
+                />
+                <span id="email-error"></span>
+              </div>
+
+              <div class="input-group">
+                <label>Your Message</label>
+                <textarea
+                  rows="5"
+                  placeholder="Enter your message"
+                  id="contact-message"
+                  onkeyup="validateMessage()"
+                ></textarea>
+                <span id="message-error"></span>
+              </div>
+
+              <button type="button" onclick="return validateForm()">
+                Submit
+              </button>
+              <span id="submit-error"></span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./src/script.js"></script>
+  </body>
+</html>
