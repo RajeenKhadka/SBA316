@@ -222,5 +222,8 @@ function validateForm() {
     }, 2000);
     return false;
   }
+
+  window.alert("Welcome");
+  window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
   return true; // Form can be submitted if all validations pass
 }
